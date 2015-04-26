@@ -14,6 +14,9 @@
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_GameOver</sprite>
     <sprite>sprites\spr_replay</sprite>
+    <sprite>sprites\spr_home</sprite>
+    <sprite>sprites\spr_back</sprite>
+    <sprite>sprites\spr_controls</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -30,11 +33,17 @@
     <object>objects\obj_GameOver</object>
     <object>objects\obj_highscore</object>
     <object>objects\obj_replay</object>
+    <object>objects\obj_pause</object>
+    <object>objects\obj_back</object>
+    <object>objects\obj_controls</object>
+    <object>objects\obj_home</object>
+    <object>objects\obj_init</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\StartRoom</room>
     <room>rooms\GameScreen</room>
     <room>rooms\ScoreRoom</room>
+    <room>rooms\ControlRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
