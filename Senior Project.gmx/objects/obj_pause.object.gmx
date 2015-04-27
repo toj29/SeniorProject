@@ -48,11 +48,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.pause = 1)
+            <string>//Display Text
+if(global.pause = 1)
 {
     draw_set_color(c_white);
     draw_set_alpha(1);
-    draw_text((room_width/2)-75, 100, "GAME PAUSED");
+    draw_set_halign(fa_center);
+    draw_text((room_width/2), 100, "GAME PAUSED");
+    draw_text((room_width/2), 130, "Press 'P' to Continue");
+    draw_text((room_width/2), 200, "CONTROLS");
+    draw_text((room_width/2), 250, "Use the arrow keys to move your player");
+    draw_text((room_width/2), 300, "Use the space bar to shoot enemies");
 }
 
 </string>
@@ -77,23 +83,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.pause)
+            <string>//Pause Game
+if(!global.pause)
 {
     global.pause = 1;
     instance_deactivate_all(true);    
-    instance_create((room_width/2),(room_height/2)-50, obj_home);
-    instance_create((room_width/2),(room_height/2)+50,obj_controls);
-    //obj_home.visible = true;
-    //obj_controls.visible = true;
+    instance_create((room_width/2),(room_height/2)+100, obj_home);
+    
 }
 else
 {
     global.pause = 0;
     instance_activate_all();
     instance_deactivate_object(obj_home);
-    instance_deactivate_object(obj_controls);
-    //obj_home.visible = false;
-    //obj_controls.visible = false;
 }
 </string>
           </argument>

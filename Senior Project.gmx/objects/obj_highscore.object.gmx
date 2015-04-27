@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>highscore_add("AAA",score);
+            <string>highscore_add(global.name,score);
 </string>
           </argument>
         </arguments>
