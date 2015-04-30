@@ -147,14 +147,13 @@ if(x &gt; room_width)
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>other</whoName>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
-hero_health -= 5;
+            <string>hero_health -=5;
 </string>
           </argument>
         </arguments>
